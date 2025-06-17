@@ -44,24 +44,36 @@ var sum_to_n_c = function(n) {
 };
 // -> O(n)
 
+var sum_to_n_d = function(n) {
+    // Using mathematical formula: sum = n * (n + 1) / 2
+    // This is the formula for the sum of first n natural numbers
+    if (n < 0) return 0;
+    
+    return (n * (n + 1)) / 2;
+};
+// -> O(1) - constant time complexity
 
 // Test case
 console.log('value: -1:');
 console.log('Solution 1: ', sum_to_n_a(-1));
 console.log('Solution 2: ', sum_to_n_b(-1));
 console.log('Solution 3: ', sum_to_n_c(-1));
+console.log('Solution 4: ', sum_to_n_d(-1));
 
 console.log('value: 0:');
 console.log('Solution 1: ', sum_to_n_a(0));
 console.log('Solution 2: ', sum_to_n_b(0));
 console.log('Solution 3: ', sum_to_n_c(0));
+console.log('Solution 4: ', sum_to_n_d(0));
 
 console.log('value: 1:');
 console.log('Solution 1: ', sum_to_n_a(1));
 console.log('Solution 2: ', sum_to_n_b(1));
 console.log('Solution 3: ', sum_to_n_c(1));
+console.log('Solution 4: ', sum_to_n_d(1));
 
 console.log('value: 5:');
 console.log('Solution 1: ', sum_to_n_a(5));
 console.log('Solution 2: ', sum_to_n_b(5));
 console.log('Solution 3: ', sum_to_n_c(5));
+console.log('Solution 4: ', sum_to_n_d(5));
